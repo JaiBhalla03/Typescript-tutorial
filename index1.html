@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    .grandparent{
+        margin: 0 auto;
+        background: red;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100px;
+    }
+    .parent{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        background: blue;
+        height: 80px;
+        width: 80px;
+    }
+    .child{
+        margin: 0 auto;
+        align-content: center;
+        background: green;
+        height: 60px;
+        width: 60px;
+    }
+    .bruh{
+        display: flex;
+        justify-content: space-around;
+        margin: 50px 0px 0px 0px;
+    }
+    .container{
+        height: 100px;
+        width: 100px;
+        background: black;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+</style>
+<div class="grandparent">
+    <div class="parent">
+        <div class="child">
+        </div>
+    </div>
+</div>
+<div class="bruh">
+    <div class="container" id="A">A</div>
+    <div class="container" id="B">B</div>
+    <div class="container" id="C">C</div>
+    <div class="container" id="D">D</div>
+</div>
+<script src="./eventListeners.js"></script>
+</body>
+</html>
